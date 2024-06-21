@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="content-wrapper"><img class="navbar__logo" src="images/logo.svg">
+        <nav class="navbar__navigation">
+          <ul class="navbar__navigation__list">
+            <li class="navbar__navigation__list-item active"><a class="link" href="#">Home</a></li>
+            <li class="navbar__navigation__list-item"><a class="link" href="#">Company</a></li>
+            <li class="navbar__navigation__list-item"><a class="link" href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="navbar__action"><a class="link" href="#">Post a job</a>
+          <button class="primary-button button" type="button">Log in</button>
+        </div>
+        <button class="navbar__burger-menu" type="button"><img class="burger-menu-image" src="images/burger.svg"></button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__content"> 
+        <div class="header__content__top">
+          <div class="wrapper">
+            <div class="notifier">
+              <div class="notifier__label">new</div>
+              <div class="notifier__text">Stay connected to get upcoming jobs</div>
+            </div>
+            <h1 class="header__content__title">Find the most exciting jobs in tech</h1>
+          </div>
+          <p class="header__content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et. Sign in or sign up to get started!</p>
+        </div>
+        <div class="header__content__mid"><img class="header__content__mid-image" src="images/header_image.jpeg" alt="">
+                    <div class="search-bar left"><img class="search-bar-image" src="images/search.svg">
+                      <div class="input-wrapper">
+                        <input class="search-bar-input" type="text" placeHolder="Search...">
+                      </div>
+                      <button class="search-bar-button primary-button button" type="button">Search</button>
+                    </div>
+        </div>
+        <div class="header__content__bottom">
+          <ul class="header__content__bottom__images-list">
+            <li class="header__content__bottom__images-list__item"><img class="company-image" src="images/open.svg"></li>
+            <li class="header__content__bottom__images-list__item"><img class="company-image" src="images/hubspot.svg"></li>
+            <li class="header__content__bottom__images-list__item"><img class="company-image" src="images/amazon.svg"></li>
+            <li class="header__content__bottom__images-list__item"><img class="company-image" src="images/shopify.svg"></li>
+            <li class="header__content__bottom__images-list__item"><img class="company-image" src="images/slack.svg"></li>
+            <li class="header__content__bottom__images-list__item"><img class="company-image" src="images/dropbox.svg"></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__section jobs">
+        <div class="page__section__content">
+          <div class="page__section-top"> 
+            <div class="page__section-top__wrapper">
+              <h2 class="page__section__title">Explore the latest job openings</h2>
+              <p class="page__section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna.</p>
+            </div>
+            <button class="primary-button button" type="button">See all jobs</button>
+          </div>
+          <div class="page__section-bottom">
+            <ul class="page__section-bottom__list">
+              <li class="jobcard">
+                <div class="jobcard__header">
+                  <div class="jobcard__header__logo"><img src="images/dribble.svg" alt="Dribble logo"/></div>
+                  <div class="jobcard__header__company-data">
+                    <p class="jobcard__company">Dribble</p>
+                    <p class="jobcard__date">October 25, 2022</p>
+                  </div>
+                </div>
+                <div class="jobcard__body">
+                  <p class="jobcard__title">Front End Developer</p>
+                </div>
+                <div class="jobcard__tags"><span class="tag jobcard__tag duty">Marketing</span><span class="tag jobcard__tag mode">Part Time</span></div>
+                <div class="jobcard__data">
+                  <div class="jobcard__location"><img class="jobcard__icon jobcard__icon--location" src="images/location.svg"/>
+                    <p class="jobcard__location-text">San Antonio</p>
+                  </div>
+                  <div class="jobcard__salary"><img class="jobcard__icon jobcard__icon--salary" src="images/salary.svg"/>
+                    <p class="jobcard__salary-text">$130k-160k</p>
+                  </div>
+                </div>
+              </li>
+              <li class="jobcard">
+                <div class="jobcard__header">
+                  <div class="jobcard__header__logo"><img src="images/dribble.svg" alt="Another Company logo"/></div>
+                  <div class="jobcard__header__company-data">
+                    <p class="jobcard__company">Another Company</p>
+                    <p class="jobcard__date">November 5, 2022</p>
+                  </div>
+                </div>
+                <div class="jobcard__body">
+                  <p class="jobcard__title">Backend Developer</p>
+                </div>
+                <div class="jobcard__tags"><span class="tag jobcard__tag duty">Development</span><span class="tag jobcard__tag mode">Full Time</span></div>
+                <div class="jobcard__data">
+                  <div class="jobcard__location"><img class="jobcard__icon jobcard__icon--location" src="images/location.svg"/>
+                    <p class="jobcard__location-text">New York</p>
+                  </div>
+                  <div class="jobcard__salary"><img class="jobcard__icon jobcard__icon--salary" src="images/salary.svg"/>
+                    <p class="jobcard__salary-text">$120k-150k</p>
+                  </div>
+                </div>
+              </li>
+              <li class="jobcard">
+                <div class="jobcard__header">
+                  <div class="jobcard__header__logo"><img src="images/dribble.svg" alt="Another Company logo"/></div>
+                  <div class="jobcard__header__company-data">
+                    <p class="jobcard__company">Another Company</p>
+                    <p class="jobcard__date">November 5, 2022</p>
+                  </div>
+                </div>
+                <div class="jobcard__body">
+                  <p class="jobcard__title">Backend Developer</p>
+                </div>
+                <div class="jobcard__tags"><span class="tag jobcard__tag duty">Development</span><span class="tag jobcard__tag mode">Full Time</span></div>
+                <div class="jobcard__data">
+                  <div class="jobcard__location"><img class="jobcard__icon jobcard__icon--location" src="images/location.svg"/>
+                    <p class="jobcard__location-text">New York</p>
+                  </div>
+                  <div class="jobcard__salary"><img class="jobcard__icon jobcard__icon--salary" src="images/salary.svg"/>
+                    <p class="jobcard__salary-text">$120k-150k</p>
+                  </div>
+                </div>
+              </li>
+              <li class="jobcard">
+                <div class="jobcard__header">
+                  <div class="jobcard__header__logo"><img src="images/dribble.svg" alt="Another Company logo"/></div>
+                  <div class="jobcard__header__company-data">
+                    <p class="jobcard__company">Another Company</p>
+                    <p class="jobcard__date">November 5, 2022</p>
+                  </div>
+                </div>
+                <div class="jobcard__body">
+                  <p class="jobcard__title">Backend Developer</p>
+                </div>
+                <div class="jobcard__tags"><span class="tag jobcard__tag duty">Development</span><span class="tag jobcard__tag mode">Full Time</span></div>
+                <div class="jobcard__data">
+                  <div class="jobcard__location"><img class="jobcard__icon jobcard__icon--location" src="images/location.svg"/>
+                    <p class="jobcard__location-text">New York</p>
+                  </div>
+                  <div class="jobcard__salary"><img class="jobcard__icon jobcard__icon--salary" src="images/salary.svg"/>
+                    <p class="jobcard__salary-text">$120k-150k</p>
+                  </div>
+                </div>
+              </li>
+              <li class="jobcard">
+                <div class="jobcard__header">
+                  <div class="jobcard__header__logo"><img src="images/dribble.svg" alt="Another Company logo"/></div>
+                  <div class="jobcard__header__company-data">
+                    <p class="jobcard__company">Another Company</p>
+                    <p class="jobcard__date">November 5, 2022</p>
+                  </div>
+                </div>
+                <div class="jobcard__body">
+                  <p class="jobcard__title">Backend Developer</p>
+                </div>
+                <div class="jobcard__tags"><span class="tag jobcard__tag duty">Development</span><span class="tag jobcard__tag mode">Full Time</span></div>
+                <div class="jobcard__data">
+                  <div class="jobcard__location"><img class="jobcard__icon jobcard__icon--location" src="images/location.svg"/>
+                    <p class="jobcard__location-text">New York</p>
+                  </div>
+                  <div class="jobcard__salary"><img class="jobcard__icon jobcard__icon--salary" src="images/salary.svg"/>
+                    <p class="jobcard__salary-text">$120k-150k</p>
+                  </div>
+                </div>
+              </li>
+              <li class="jobcard">
+                <div class="jobcard__header">
+                  <div class="jobcard__header__logo"><img src="images/dribble.svg" alt="Another Company logo"/></div>
+                  <div class="jobcard__header__company-data">
+                    <p class="jobcard__company">Another Company</p>
+                    <p class="jobcard__date">November 5, 2022</p>
+                  </div>
+                </div>
+                <div class="jobcard__body">
+                  <p class="jobcard__title">Backend Developer</p>
+                </div>
+                <div class="jobcard__tags"><span class="tag jobcard__tag duty">Development</span><span class="tag jobcard__tag mode">Full Time</span></div>
+                <div class="jobcard__data">
+                  <div class="jobcard__location"><img class="jobcard__icon jobcard__icon--location" src="images/location.svg"/>
+                    <p class="jobcard__location-text">New York</p>
+                  </div>
+                  <div class="jobcard__salary"><img class="jobcard__icon jobcard__icon--salary" src="images/salary.svg"/>
+                    <p class="jobcard__salary-text">$120k-150k</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__section companies">
+        <div class="page__section__content"> 
+          <div class="page__section-top"> 
+            <div class="page__section-top__wrapper">
+              <h2 class="page__section__title">Work with exciting companies</h2>
+              <p class="page__section__description">Discover more than 1,600 open positions</p>
+            </div>
+            <div class="arrow-button-container">
+              <button class="arrow-button prev disabled" type="button"></button>
+              <button class="arrow-button right" type="button"></button>
+            </div>
+          </div>
+          <div class="page__section-bottom">
+            <ul class="page__section-bottom__gallery gallery">
+              <li class="company-card">
+                <div class="company-card__header"> 
+                  <div class="company-card__header__logo"><img src="images/Dribble.svg" alt="Dribble logo"/></div>
+                  <p class="company-card__company">Dribble</p>
+                </div>
+                <p class="company-card__description">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                <div class="company-card__employee-tag">65 employees</div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__header"> 
+                  <div class="company-card__header__logo"><img src="images/Dribble.svg" alt="Dribble logo"/></div>
+                  <p class="company-card__company">Dribble</p>
+                </div>
+                <p class="company-card__description">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                <div class="company-card__employee-tag">65 employees</div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__header"> 
+                  <div class="company-card__header__logo"><img src="images/Dribble.svg" alt="Dribble logo"/></div>
+                  <p class="company-card__company">Dribble</p>
+                </div>
+                <p class="company-card__description">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                <div class="company-card__employee-tag">65 employees</div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__header"> 
+                  <div class="company-card__header__logo"><img src="images/Dribble.svg" alt="Dribble logo"/></div>
+                  <p class="company-card__company">Dribble</p>
+                </div>
+                <p class="company-card__description">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                <div class="company-card__employee-tag">65 employees</div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__header"> 
+                  <div class="company-card__header__logo"><img src="images/Dribble.svg" alt="Dribble logo"/></div>
+                  <p class="company-card__company">Dribble</p>
+                </div>
+                <p class="company-card__description">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                <div class="company-card__employee-tag">65 employees</div>
+              </li>
+              <li class="company-card">
+                <div class="company-card__header"> 
+                  <div class="company-card__header__logo"><img src="images/Dribble.svg" alt="Dribble logo"/></div>
+                  <p class="company-card__company">Dribble</p>
+                </div>
+                <p class="company-card__description">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                <div class="company-card__employee-tag">65 employees</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__section membership">
+        <div class="page__section__content">
+          <div class="image-wrapper"> <img class="membership-image" src="images/membership.png">
+            <div class="membership-image-bottom">Partnership with Glassdoor and LinkedIn</div>
+          </div>
+          <div class="details">
+            <h2 class="page__section__title">Build a custom membership site with locked content.</h2>
+            <p class="page__section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed laoreet feugiat consequat.</p>
+            <ul class="membership-features">
+              <li class="feature">
+                <div class="feature-logo-wrapper"><img class="feature-logo" src="images/feature.png"/></div>
+                <div class="feature-content-wrapper">
+                  <p class="feature-title">Add a feature point here</p>
+                  <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </li>
+              <li class="feature">
+                <div class="feature-logo-wrapper"><img class="feature-logo" src="images/feature.png"/></div>
+                <div class="feature-content-wrapper">
+                  <p class="feature-title">Add a feature point here</p>
+                  <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </li>
+              <li class="feature">
+                <div class="feature-logo-wrapper"><img class="feature-logo" src="images/feature.png"/></div>
+                <div class="feature-content-wrapper">
+                  <p class="feature-title">Add a feature point here</p>
+                  <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__section reviews">
+        <div class="page__section__content">
+          <h2 class="page__section__title">See what users say about our job platform</h2>
+          <div class="testimonial-container">
+            <div class="testimonial">
+              <div class="testimonial-details">
+                <p class="testimonial-text">I was impressed by the seamless user experience and the ease with which I was able to perform complex data analysis tasks.</p>
+                <div class="testimonial-author-data">David Sinclair - Senior Frontend Developer</div>
+              </div>
+            </div><img class="testimonial-photo" src="images/testimonial.png" alt="David Sinclair photo"/>
+          </div>
+          <div class="testimonial-container">
+            <div class="testimonial">
+              <div class="testimonial-details">
+                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor.</p>
+                <div class="testimonial-author-data">David Sinclair - Senior Backend Developer</div>
+              </div>
+            </div><img class="testimonial-photo" src="images/testimonial.png" alt="David Sinclair photo"/>
+          </div>
+          <div class="testimonial-container">
+            <div class="testimonial">
+              <div class="testimonial-details">
+                <p class="testimonial-text">&quot;I recently had the pleasure of exploring and utilizing your cutting-edge AI-powered platform. From the moment I started using it</p>
+                <div class="testimonial-author-data">David Sinclair - Senior Dancer</div>
+              </div>
+            </div><img class="testimonial-photo" src="images/testimonial.png" alt="David Sinclair photo"/>
+          </div>
+          <div class="navigation">
+            <div class="arrow-button-container">
+              <button class="arrow-button prev" type="button" id="fade_prev"></button>
+              <button class="arrow-button right" type="button" id="fade_next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__section blog">
+        <div class="page__section__content"> 
+          <div class="page__section-top"> 
+            <div class="page__section-top__wrapper">
+              <h2 class="page__section__title">Get the latest news about jobs!</h2>
+            </div>
+            <div class="arrow-button-container">
+              <button class="arrow-button prev disabled" type="button"></button>
+              <button class="arrow-button right" type="button"></button>
+            </div>
+          </div>
+          <div class="page__section-bottom">
+            <ul class="page__section-bottom__gallery gallery"> 
+              <li class="blog-card"><img class="blog-card__picture" src="images/blog1.png"/>
+                <div class="blog-card__tag">Resources</div>
+                <p class="blog-card__title">Finding employees in the gig economy</p>
+                <p class="blog-card__date">
+                   &#8226; October 24, 2022</p>
+                <button class="blog-card__button secondary-button" type="button">Read more</button>
+              </li>
+              <li class="blog-card"><img class="blog-card__picture" src="images/blog1.png"/>
+                <div class="blog-card__tag">Resources</div>
+                <p class="blog-card__title">Finding employees in the gig economy</p>
+                <p class="blog-card__date">
+                   &#8226; October 24, 2022</p>
+                <button class="blog-card__button secondary-button" type="button">Read more</button>
+              </li>
+              <li class="blog-card"><img class="blog-card__picture" src="images/blog1.png"/>
+                <div class="blog-card__tag">Resources</div>
+                <p class="blog-card__title">Finding employees in the gig economy</p>
+                <p class="blog-card__date">
+                   &#8226; October 24, 2022</p>
+                <button class="blog-card__button secondary-button" type="button">Read more</button>
+              </li>
+              <li class="blog-card"><img class="blog-card__picture" src="images/blog1.png"/>
+                <div class="blog-card__tag">Resources</div>
+                <p class="blog-card__title">Finding employees in the gig economy</p>
+                <p class="blog-card__date">
+                   &#8226; October 24, 2022</p>
+                <button class="blog-card__button secondary-button" type="button">Read more</button>
+              </li>
+              <li class="blog-card"><img class="blog-card__picture" src="images/blog1.png"/>
+                <div class="blog-card__tag">Resources</div>
+                <p class="blog-card__title">Finding employees in the gig economy</p>
+                <p class="blog-card__date">
+                   &#8226; October 24, 2022</p>
+                <button class="blog-card__button secondary-button" type="button">Read more</button>
+              </li>
+              <li class="blog-card"><img class="blog-card__picture" src="images/blog1.png"/>
+                <div class="blog-card__tag">Resources</div>
+                <p class="blog-card__title">Finding employees in the gig economy</p>
+                <p class="blog-card__date">
+                   &#8226; October 24, 2022</p>
+                <button class="blog-card__button secondary-button" type="button">Read more</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__section explore">
+        <div class="page__section__content">
+          <div class="banner"><img class="banner-picture" src="images/zoom.png" alt="zoom picture"></div>
+          <h2 class="page__section__title">Explore a job now!</h2>
+          <p class="page__section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurisrhoncus pharetra cursus. Suspendisse sodales porta leo, acplacerat ex pretium quis.</p>
+                    <div class="search-bar bottom"><img class="search-bar-image" src="images/search.svg">
+                      <div class="input-wrapper">
+                        <input class="search-bar-input" type="text" placeHolder="Search...">
+                      </div>
+                      <button class="search-bar-button primary-button button" type="button">Search</button>
+                    </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content"><img class="footer__logo" src="images/logo.svg" alt="Logo">
+        <div class="footer__details">
+          <div class="footer__nav-wrapper">
+            <p class="footer__nav-title">Pages</p>
+            <nav class="navbar__navigation">
+              <ul class="navbar__navigation__list">
+                <li class="navbar__navigation__list-item active"><a class="link" href="#">Home</a></li>
+                <li class="navbar__navigation__list-item"><a class="link" href="#">Company</a></li>
+                <li class="navbar__navigation__list-item"><a class="link" href="#">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__signup-wrapper">
+            <p class="footer__signup-title">Sign up to our newsletter</p>
+            <form class="footer__form" action="/" method="post">
+              <div class="footer-input-wrapper">
+                <input class="footer__input" type="text" name="email" placeholder="E-mail address" required>
+              </div>
+              <button class="footer__button primary-button" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
