@@ -4,18 +4,18 @@
 
 1. **Клонирование репозитория:**
 
-   ```bash
-   git clone https://github.com/astra463/test_assigment_f5.git
-   cd test_assigment_f5
-   ```
+```bash
+git clone https://github.com/astra463/test_assigment_f5.git
+cd test_assigment_f5
+```
 
 2. **Установка зависимостей:**
 
    Убедитесь, что у вас установлен Node.js и npm. Затем выполните:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 ## Использование
 
