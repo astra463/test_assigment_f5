@@ -85,6 +85,8 @@ exports.processScripts = processScripts;
 exports.processImages = processImages;
 exports.watch = watchFiles;
 
+exports.build = gulp.parallel(buildStyles, buildViews, processScripts, processImages, processFonts);
+
 exports.default = series(
 	parallel(buildStyles, buildViews, processScripts, processImages, processFonts),
 	prefixCSS,
