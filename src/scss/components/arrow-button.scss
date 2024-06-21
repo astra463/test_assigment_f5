@@ -1,0 +1,33 @@
+@use "../variables" as *;
+
+.arrow-button-container {
+  display: flex;
+  gap: 22px;
+  align-self: flex-end;
+
+  @media(width < 375px) {
+    margin-top: 28px;
+    align-self: flex-start;
+	}
+}
+
+.arrow-button {
+  width: 48px;
+  height: 48px;
+  border: 1px solid $border-color;
+  background-color: $background;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+}
+
+.prev {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,56 @@
+@use "../variables" as *;
+
+@use "../base/mixins";
+
+.blog-card {
+
+  @include mixins.card;
+	padding: 9px;
+  gap: 0;
+  max-width: 390px;
+
+	@media(width < 375px) {
+		min-width: 300px;
+		max-width: 320px;
+	}
+
+	&__tag {
+    margin: 32px 0 0 23px;
+    padding: 0;
+		color: $active-color;
+		background-color: $link-water;
+
+		@include mixins.tag;
+	}
+
+	&__title {
+    margin: 16px 0 0 23px;
+    padding: 0;
+		color: $main-text-color;
+		font-family: Archivo, sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		font-style: normal;
+		line-height: 1.4;
+	}
+
+	&__date {
+    position: relative;
+    margin: 16px 0 0 23px;
+    padding: 0;
+		width: 147px;
+		height: 24px;
+		color: $shuttle-gray;
+		font-family: Inter-SemiBold, sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		font-style: normal;
+		line-height: 1.71;
+    text-transform: uppercase;
+	}
+
+  .secondary-button {
+    margin: 31px 0 22px;
+    width: 100%;
+  }
+}

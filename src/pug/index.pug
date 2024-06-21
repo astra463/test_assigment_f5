@@ -1,0 +1,93 @@
+extends layouts/main
+include mixins/company-card
+include mixins/jobcard 
+include mixins/feature 
+include mixins/testimonial 
+include mixins/blog-card 
+include mixins/searchbar
+
+block content
+  main.page
+    section.page__section.jobs
+      .page__section__content
+        .page__section-top 
+          .page__section-top__wrapper
+            h2.page__section__title Explore the latest job openings
+            p.page__section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna.
+          button(type="button").primary-button.button See all jobs
+        .page__section-bottom
+          ul.page__section-bottom__list
+            +jobcard('Dribble', 'October 25, 2022', 'Front End Developer', 'Marketing', 'Part Time', 'San Antonio', '$130k-160k')
+            +jobcard('Another Company', 'November 5, 2022', 'Backend Developer', 'Development', 'Full Time', 'New York', '$120k-150k')
+            +jobcard('Another Company', 'November 5, 2022', 'Backend Developer', 'Development', 'Full Time', 'New York', '$120k-150k')
+            +jobcard('Another Company', 'November 5, 2022', 'Backend Developer', 'Development', 'Full Time', 'New York', '$120k-150k')
+            +jobcard('Another Company', 'November 5, 2022', 'Backend Developer', 'Development', 'Full Time', 'New York', '$120k-150k')
+            +jobcard('Another Company', 'November 5, 2022', 'Backend Developer', 'Development', 'Full Time', 'New York', '$120k-150k')
+    section.page__section.companies
+      .page__section__content 
+        .page__section-top 
+          .page__section-top__wrapper
+            h2.page__section__title Work with exciting companies
+            p.page__section__description Discover more than 1,600 open positions
+          .arrow-button-container
+            button(type="button").arrow-button.prev.disabled
+            button(type="button").arrow-button.right
+        .page__section-bottom
+          ul.page__section-bottom__gallery.gallery
+            +company-card('Dribble', "65")
+            +company-card('Dribble', "65")
+            +company-card('Dribble', "65")
+            +company-card('Dribble', "65")
+            +company-card('Dribble', "65")
+            +company-card('Dribble', "65")
+    section.page__section.membership
+      .page__section__content
+        .image-wrapper  
+          img.membership-image(src="images/membership.png")
+          .membership-image-bottom Partnership with Glassdoor and LinkedIn
+        .details
+          h2.page__section__title Build a custom membership site with locked content.
+          p.page__section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed laoreet feugiat consequat.
+          ul.membership-features
+            li.feature
+              +feature("images/feature.png", "Add a feature point here", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+            li.feature
+              +feature("images/feature.png", "Add a feature point here", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+            li.feature
+              +feature("images/feature.png", "Add a feature point here", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+    section.page__section.reviews
+      .page__section__content
+        h2.page__section__title See what users say about our job platform
+        .testimonial-container
+          +testimonial('I was impressed by the seamless user experience and the ease with which I was able to perform complex data analysis tasks.', 'David Sinclair', 'Senior Frontend Developer', 'images/testimonial.png')
+        .testimonial-container
+          +testimonial('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor.', 'David Sinclair', 'Senior Backend Developer', 'images/testimonial.png')
+        .testimonial-container
+          +testimonial('"I recently had the pleasure of exploring and utilizing your cutting-edge AI-powered platform. From the moment I started using it', 'David Sinclair', 'Senior Dancer', 'images/testimonial.png')
+        .navigation
+          .arrow-button-container
+            button(type="button", id="fade_prev").arrow-button.prev
+            button(type="button", id="fade_next").arrow-button.right
+    section.page__section.blog
+      .page__section__content 
+        .page__section-top 
+          .page__section-top__wrapper
+            h2.page__section__title Get the latest news about jobs!
+          .arrow-button-container
+            button(type="button").arrow-button.prev.disabled
+            button(type="button").arrow-button.right
+        .page__section-bottom
+          ul.page__section-bottom__gallery.gallery 
+            +blog-card("images/blog1.png", "Resources", "Finding employees in the gig economy", "October 24, 2022")
+            +blog-card("images/blog1.png", "Resources", "Finding employees in the gig economy", "October 24, 2022")
+            +blog-card("images/blog1.png", "Resources", "Finding employees in the gig economy", "October 24, 2022")
+            +blog-card("images/blog1.png", "Resources", "Finding employees in the gig economy", "October 24, 2022")
+            +blog-card("images/blog1.png", "Resources", "Finding employees in the gig economy", "October 24, 2022")
+            +blog-card("images/blog1.png", "Resources", "Finding employees in the gig economy", "October 24, 2022")
+    section.page__section.explore
+      .page__section__content
+        .banner
+          img.banner-picture(src="images/zoom.png", alt="zoom picture")
+        h2.page__section__title Explore a job now!
+        p.page__section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurisrhoncus pharetra cursus. Suspendisse sodales porta leo, acplacerat ex pretium quis.
+        +search-bar('Search', "bottom")

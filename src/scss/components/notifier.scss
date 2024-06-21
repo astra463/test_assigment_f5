@@ -1,0 +1,27 @@
+@use "../variables" as *;
+
+.notifier {
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary;
+  padding: 8px 16px 8px 8px;
+
+  &__label {
+    padding: 4px 8px;
+    background-color: $background;
+    color: $primary;
+    text-transform: uppercase;
+    font-family: Inter-SemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__text {
+    font-family: Inter-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

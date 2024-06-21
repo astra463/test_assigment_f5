@@ -1,0 +1,95 @@
+@use "../variables" as *;
+
+@use "../base/mixins";
+
+.jobcard {
+
+	@include mixins.card;
+
+	&__header {
+
+		&__company-data {
+			display: flex;
+			flex-direction: column;
+
+			.jobcard__company,
+			.jobcard__date {
+				margin: 0;
+			}
+
+			.jobcard__company {
+				color: $main-text-color;
+				font-family: Inter-Medium, sans-serif;
+				font-weight: 500;
+				font-size: 16px;
+				font-style: normal;
+				line-height: 1.8;
+			}
+
+			.jobcard__date {
+				font-style: normal;
+				font-family: Inter-Regular, sans-serif;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1.6;
+				color: $shuttle-gray;
+			}
+		}
+	}
+
+	&__body {
+
+		.jobcard__title {
+			margin: 0;
+			font-family: Archivo, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 1.3;
+			color: $main-text-color;
+		}
+	}
+
+	&__tags {
+		display: flex;
+		gap: 8px;
+
+    .tag {
+
+      @include mixins.tag;
+    }
+
+		.duty {
+			background: $link-water;
+			color: $primary;
+		}
+	
+		.mode {
+			background: $seashell-peach;
+			color: $tussok;
+		}
+	}
+
+	&__data {
+		display: flex;
+		gap: 24px;
+		align-items: center;
+
+		.jobcard__location,
+		.jobcard__salary {
+			display: flex;
+			align-items: center;
+			gap: 3px;
+			font-family: Inter-Medium, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.2;
+			color: $shuttle-gray;
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

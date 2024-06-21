@@ -1,0 +1,44 @@
+@use "../../variables" as *;
+
+@mixin button($text, $bg, $hover-text, $hover-bg, $disabled-text, $disabled-bg, $active) {
+  padding: 10px 20px;
+  color: $text;
+  font-weight: 500;
+  background: $bg;
+  border: 0;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  font-family: Inter-Medium, sans-serif;
+
+  &:hover {
+    background: $hover-bg;
+    color: $hover-text;
+  }
+
+  &:focus {
+    border: 1px solid $active;
+  }
+
+  &:disabled {
+    color: $disabled-text;
+    background: $disabled-bg;
+    cursor: default;
+  }
+}
+
+@mixin link() {
+  padding: 10px 16px;
+  color: $main-paragraph-color;
+  font-family: Inter-Medium, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
+}
+

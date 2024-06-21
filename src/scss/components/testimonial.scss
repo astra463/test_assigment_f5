@@ -1,0 +1,64 @@
+@use "../variables" as *;
+
+.testimonial-container {
+	display: flex;
+  gap: 126px;
+  top: 168px;
+  position: absolute;
+  align-self: center;
+  transition: opacity 0.5s ease;
+
+	.testimonial-photo {
+
+		@media(width < 375px) {
+			display: none;
+		}
+	}
+
+	.testimonial {
+    display: flex;
+    gap: 126px;
+    align-self: center;
+
+
+		&-details {
+			position: relative;
+
+			.testimonial-text {
+        margin: 0;
+        padding-bottom: 24px;
+        padding-right: 16px;
+				max-width: 450px;
+				font-family: Inter-Medium, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 1.4;
+				color: $main-paragraph-color;
+			}
+
+			.testimonial-author-data {
+        display: flex;  
+				max-width: 450px;
+				font-family: Inter-Regular, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 1.8;
+				color: $primary;
+			}
+		}
+	}
+}
+
+.navigation {
+	position: absolute;
+  bottom: 0;
+  left: 0;
+
+	@media(width < 375px) {
+		top: 150px;
+		right: 0;
+		left: unset;
+	}
+}

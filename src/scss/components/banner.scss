@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+.banner {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 64px;
+  background-color: $background;
+  border: 1px solid $border-color;
+  background-repeat: no-repeat;
+  background-position: center;
+}

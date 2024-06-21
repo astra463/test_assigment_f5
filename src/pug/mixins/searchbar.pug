@@ -1,0 +1,6 @@
+mixin search-bar(text, positionClass)
+  .search-bar(class=positionClass)
+    img.search-bar-image(src="images/search.svg")
+    .input-wrapper
+      input.search-bar-input(type="text", placeHolder='Search...')
+    button(type="button").search-bar-button.primary-button.button= text

@@ -1,0 +1,69 @@
+@use "../variables" as *;
+
+.navbar {
+	width: 100%;
+	border-bottom: 1px solid $border-color;	
+	padding: 24px 0;
+
+	@media(width < 375px) {
+		padding: 24px 11.25px;
+	}
+
+	@media(width < 1920px) {
+		padding: 24px 0;
+	}
+
+	&__action {
+		align-self: center;
+
+		@media(width < 375px) {
+			display: none;
+		}
+	}
+
+	&__burger-menu {
+		display: none;
+		border: 1px solid $border-color;
+		padding: 11px;
+		background-color: $background;
+
+		@media(width < 375px) {
+			display: block;
+		}
+	}
+
+	&__navigation {
+
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			gap: 12px;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+
+			@media(width < 375px) {
+				display: none;
+			}
+
+			.active {
+
+				.link {
+					color: $active-color;
+				}
+			}
+		}
+	}
+}
+
+.content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media(width < 1920px) {
+		padding: 0 5%;
+	}
+}

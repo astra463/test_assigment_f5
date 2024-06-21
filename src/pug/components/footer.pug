@@ -1,0 +1,13 @@
+footer.footer
+  .footer__content
+    img.footer__logo(src="images/logo.svg" alt="Logo")
+    .footer__details
+      .footer__nav-wrapper
+        p.footer__nav-title Pages
+        include navigation
+      .footer__signup-wrapper
+        p.footer__signup-title Sign up to our newsletter
+        form.footer__form(action="/" method="post")
+          .footer-input-wrapper
+            input.footer__input(type="text" name="email" placeholder="E-mail address" required)
+          button.footer__button(type="submit").primary-button Subscribe

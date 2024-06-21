@@ -1,0 +1,26 @@
+header.header
+  .header__content 
+    .header__content__top
+      .wrapper
+        include notifier
+        h1.header__content__title Find the most exciting jobs in tech
+      p.header__content__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et. Sign in or sign up to get started!
+    .header__content__mid
+      img.header__content__mid-image(src="images/header_image.jpeg" alt="")
+      include ../mixins/searchbar
+      +search-bar('Search', "left")
+    .header__content__bottom
+      ul.header__content__bottom__images-list
+        li.header__content__bottom__images-list__item
+          img.company-image(src="images/open.svg")
+        li.header__content__bottom__images-list__item
+          img.company-image(src="images/hubspot.svg")
+        li.header__content__bottom__images-list__item
+          img.company-image(src="images/amazon.svg")
+        li.header__content__bottom__images-list__item
+          img.company-image(src="images/shopify.svg")
+        li.header__content__bottom__images-list__item
+          img.company-image(src="images/slack.svg")
+        li.header__content__bottom__images-list__item
+          img.company-image(src="images/dropbox.svg") 
+

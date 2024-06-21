@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+@use "../base/mixins";
+
+.primary-button { 
+
+  @include mixins.button($background, $primary, $background, $hover-color, $background, $disabled, $active-color);
+}
+
+.secondary-button { 
+
+  @include mixins.button($main-paragraph-color, $athens-gray, $background, $primary, $background, $athens-gray, $active-color)
+}

@@ -1,0 +1,9 @@
+mixin company-card(company, employees)
+  li.company-card
+    .company-card__header 
+      .company-card__header__logo
+        img(src=`images/${company}.svg` alt=`${company} logo`)
+      p.company-card__company= company
+    p.company-card__description Lorem ipsum dolor sit amet, consectetur dipiscing elit. Vivamus at dui mollis metus gravida tristique.
+    .company-card__employee-tag= `${employees} employees`
+

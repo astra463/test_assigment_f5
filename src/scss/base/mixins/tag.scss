@@ -1,0 +1,12 @@
+@use "../../variables" as *;
+
+@mixin tag {
+  padding: 6px 12px;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  width: fit-content;
+}
+

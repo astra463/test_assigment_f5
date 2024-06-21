@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+
+@mixin card {
+  display: flex;
+	flex-direction: column;
+	gap: 24px;
+	max-width: 358px;
+	border: 1px solid $border-color;
+	padding: 29px;
+  background-color: $background;
+
+  &__header {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      border: 1px solid $border-color;
+    }
+  }
+}

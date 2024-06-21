@@ -1,0 +1,21 @@
+mixin jobcard(company, date, title, duty, mode, location, salary)
+  li.jobcard
+    .jobcard__header
+      .jobcard__header__logo
+        img(src="images/dribble.svg" alt=`${company} logo`)
+      .jobcard__header__company-data
+        p.jobcard__company= company
+        p.jobcard__date= date
+    .jobcard__body
+      p.jobcard__title= title
+    .jobcard__tags
+        span.tag.jobcard__tag.duty= duty
+        span.tag.jobcard__tag.mode= mode  
+    .jobcard__data
+      .jobcard__location
+        img.jobcard__icon.jobcard__icon--location(src="images/location.svg")
+        p.jobcard__location-text= location
+      .jobcard__salary
+        img.jobcard__icon.jobcard__icon--salary(src="images/salary.svg")
+        p.jobcard__salary-text= salary
+

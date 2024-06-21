@@ -1,0 +1,80 @@
+@use "../variables" as *;
+
+.membership .page__section__content {
+	flex-direction: row;
+	gap: 104px;
+
+	@media(width < 1920px) {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.page__section__title {
+
+		&::before {
+			content: "why choose us";
+			display: none;
+			font-family: Inter-SemiBold, sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 1.8;
+			text-transform: uppercase;
+			color: $active-color;
+
+			@media (width < 375px) {
+				display: block;
+			}
+		}
+	}
+}
+
+.membership .page__section__description {
+	margin: 0;
+}
+
+.membership-features {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-self: center;
+}
+
+.image-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media(width < 375px) {
+		display: none;
+	}
+}
+
+.membership-image-bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	width: 65%;
+	height: 53px;
+	color: $main-paragraph-color;
+	font-family: Inter-Regular, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.2;
+	background: $athens-gray;
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+
+	@media(width < 375px) {
+		display: none;
+	}
+}

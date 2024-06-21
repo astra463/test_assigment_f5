@@ -1,0 +1,44 @@
+@use "../variables" as *;
+
+.reviews .page__section__content {
+
+  @media(width < 1920px) {
+    min-height: 1100px;
+  }
+
+  .page__section__title {
+    align-self: center;
+
+    @media (width < 375px) {
+      text-align: center;
+    }
+
+    &::before {
+			content: "testimonial";
+      text-align: center;
+			display: none;
+			font-family: Inter-SemiBold, sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 1.8;
+			text-transform: uppercase;
+			color: $active-color;
+
+			@media (width < 375px) {
+				display: block;
+			}
+		}
+  }
+
+  .testimonial-container {
+
+    @media(width < 1920px) {
+      gap: 40px;
+    }
+
+    @media (width < 375px) {
+      margin-top: 92px;
+    }
+  }
+}

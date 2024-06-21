@@ -1,0 +1,46 @@
+@use "../variables" as *;
+
+@use "../base/mixins";
+
+.company-card {
+
+	@include mixins.card;
+  min-width: 308px;
+  padding: 41px;
+
+	@media(width < 375px) {
+		padding: 33px;
+	}
+
+	&__company {
+		margin: 0;
+		font-family: Archivo, sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.3;
+		color: $main-text-color;
+	}
+
+	&__description {
+    margin: 0;
+		font-family: Inter-Regular, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.8;
+		color: $main-paragraph-color;
+
+		@media(width < 375px) {
+			max-width: 272px;
+		}
+	}
+
+  &__employee-tag {
+
+    @include mixins.tag;
+    padding: 10px 15px;
+    background-color: $harp;
+    color: $green-pea;
+  }
+}

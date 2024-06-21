@@ -1,0 +1,8 @@
+@use "../variables" as *;
+
+@use "../base/mixins";
+
+.link {
+
+  @include mixins.link();
+}

@@ -1,0 +1,51 @@
+@use "../variables" as *;
+
+.feature {
+	padding: 16px;
+	background-color: $athens-gray;
+	display: flex;
+	gap: 16px;
+  align-items: center;
+
+	&-logo-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 56px;
+		height: 56px;
+		background-color: $background;
+    border: 1px solid $border-color;
+	}
+
+	&-content-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-title {
+    margin: 0;
+		font-family: Inter-Medium, sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.8;
+		color: $main-text-color;
+	}
+
+	&-description {
+    margin: 0;
+		font-family: Inter-Regular, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+		color: $shuttle-gray;
+	}
+}
+
+// mixin feature(logo, title, description)
+//   .feature-logo-wrapper
+//     img.feature-logo(src=logo)
+//   .feature-content-wrapper
+//     p.feature-title= title
+//     p.feature-description= description

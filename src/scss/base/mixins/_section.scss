@@ -1,0 +1,38 @@
+@use "../../variables" as *;
+
+@mixin section {
+	padding: 64px 0;
+
+	&__title {
+		margin: 0;
+		font-family: Archivo, sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 1.2;
+		color: $main-text-color;
+	}
+
+	&__description {
+		margin: 16px 36px 0 0;
+		font-family: Inter-Regular, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.8;
+		color: $main-paragraph-color;
+	}
+
+	&__content {
+		position: relative;
+		max-width: 1140px;
+		display: flex;
+		flex-direction: column;
+		gap: 58px;
+		margin: 0 auto;
+
+		@media (width < 375px) {
+			gap: 24px;
+		}
+	}
+}

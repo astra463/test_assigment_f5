@@ -1,0 +1,6 @@
+mixin testimonial(text, name, position, photo)
+  .testimonial
+    .testimonial-details
+      p.testimonial-text= text
+      .testimonial-author-data=`${name} - ${position}`
+  img.testimonial-photo(src=photo, alt=`${name} photo`)

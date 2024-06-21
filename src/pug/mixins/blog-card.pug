@@ -1,0 +1,8 @@
+mixin blog-card(image, tag, title, date)
+  li.blog-card
+    img.blog-card__picture(src=image)
+    .blog-card__tag= tag 
+    p.blog-card__title= title
+    p.blog-card__date 
+      | &#8226; #{date}
+    button(type="button").blog-card__button.secondary-button Read more

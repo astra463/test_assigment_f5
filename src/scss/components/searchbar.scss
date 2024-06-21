@@ -1,0 +1,69 @@
+@use "../variables" as *;
+
+.search-bar {
+  position: absolute;
+  display: flex;
+  width: fit-content;
+  padding: 13px;
+  background-color: $background;
+  align-items: center;
+  border: 1px solid $border-color;
+
+  @media(width < 1920px) {
+    width: 80%;
+  }
+
+  @media(width < 375px) {
+    position: static;
+    width: fit-content;
+    margin-bottom: 32px;
+  }
+
+  &__image {
+    margin-right: 8px;
+  }
+
+  .input-wrapper {
+    padding: 13.5px 12px;
+    align-items: center;
+    margin-right: 8px;
+
+    @media(width < 1920px) {
+      width: 100%;
+    }
+
+    input {
+      width: 528px;
+      border: none;
+
+      @media(width < 1920px) {
+        width: 100%;
+      }
+
+      &::placeholder {
+        color: $dusty-gray;
+        font-family: Inter-Regular, sans-serif;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .search-bar-button {
+    padding: 10px 32px;
+  }
+}
+
+.bottom {
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -35px;
+
+  @media(width < 1920px) {
+    transform: unset;
+  }
+}
+
+.left {
+  left: 0;
+  top: -35px;
+}
